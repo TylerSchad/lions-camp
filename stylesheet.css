@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+#slideshow { 
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; 
+    height: 300px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+#slideshow > div { 
+    position: absolute; 
+}
+
+.container{
+	margin:0 auto;
+	max-width:960px;
+	width:96%; /*90% WORKS FOR THE WONKY INDEX FOOTER*/
+	padding:30px;
+}
+
+.navcontainer{
+	margin:0 auto;
+	max-width:960px;
+}
+
+li{
+	list-style-type:none;
+	display:inline-block;
+	margin-left:60px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size:20px;
+	margin-top:30px;
+}
+
+li a{
+	text-decoration:none;
+}
+
+li a:visited,
+li a:link{
+	color:rgba(209,199,84,1);
+}
+
+li a:active,
+li a:hover{
+	color:white;
+}
+
+.smallcolumn {
+    float: left;
+    max-width: 360px;
+    width: 94%;
+    padding-bottom: 35px;
+    font-family:'Quattrocento Sans', sans-serif;
+    font-size:24px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.twocolumn {
+    float: left;
+    max-width: 600px;
+    width: 94%;
+    padding-bottom: 35px;
+    font-family:'Quattrocento Sans', sans-serif;
+    font-size:24px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.navvy{
+	background:rgba(62,88,62,0.7);
+	max-width:2000px;
+	width:100%; /*90% WORKS FOR THE WONKY INDEX FOOTER*/
+	height:80px;
+}
+
+h1{
+	font-family:'Quattrocento Sans', sans-serif;
+	text-align:center;
+	color:rgba(107,100,24,1);
+	font-size:45px;
+	margin-top:30px;
+}
+
+html{
+	background-image:url("img/forest.jpg");
+	background-size:cover;
+}
+
+#foot{
+	position:relative;
+	left:0px;
+	bottom:0px;
+	width:98.4%;
+	overflow:hidden;
+}
+
+.smallcontainer{
+	width:420px;
+}
+
+h2{
+	font-family: 'ABeeZee', sans-serif;
+	font-size:30px;
+	color:black;
+	text-align:center;
+}
+
+p{
+	font-family: 'ABeeZee', sans-serif;
+	font-size:20px;
+	color:rgba(107,100,24,1);
+	text-align:center;
+}
+
+#map {
+    width: 350px;
+    height: 300px;
+    background-color: #CCC;
+    margin:0 auto;
+}
+
+h3{
+	font-family: 'ABeeZee', sans-serif;
+	font-size:20px;
+	color:black;
+	text-align:center;
+}
+
+h3 a:visited,
+h3 a:link{
+	color:rgba(107,100,24,1);
+	text-decoration:none;
+}
+
+h3 a:active,
+h3 a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+

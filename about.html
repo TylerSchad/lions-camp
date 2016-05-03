@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Colorado Lions Camp</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<a id="top"></a>
+		<div class="navvy">
+		<div class="navcontainer">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div><!--navcontainer-->
+		</div><!--navvy-->
+		<header>
+			<div class="container">
+			<h1>About Us</h1>
+			</div>
+		</header>
+			<div class="container">
+				<h2>Who We Are: A Summer Camping Experience for Ages 8-Senior Adult</h2><br>
+				<p>Blind and Vision Impaired</p>
+				<p>Deaf and Hearing Impaired</p>
+				<p>Down syndrome</p>
+				<p>Developmentally Delayed</p>
+				<p>Autism/Asperger's Syndrome</p>
+				<p>ADD/ADHD</p>
+				<p>Physically Challenged</p>
+				<p>Wheelchair Accessible</p><br><br>
+				<div id="map"></div><br>
+					<script>
+  						function initMap() {
+        					var mapDiv = document.getElementById('map');
+        					var map = new google.maps.Map(mapDiv, {
+          						center: {lat: 39.052594, lng: -105.094184},
+          						zoom: 12
+        					});
+        					var marker = new google.maps.Marker({
+    							position: {lat: 39.052594, lng: -105.094184},
+    							map: map,
+    							title: 'Colorado Lions Camp'
+  							});
+      					}
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        			async defer></script>
+
+				<h3>To download a camp application, click <a href="http://coloradolionscamp.org/data/documents/2016-Camp-Application.pdf">here.</a></h3>
+			</div><!--container-->
+			<div class="smallcontainer"></div><div class="smallcontainer"></div>
+			
+<!--==========JAVASCRIPT==============-->		
+		<script type="text/javascript">
+		$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() { 
+  			$('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.0.min.js"><\/script>');</script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script>
+        		<!--<div id="foot">
+			<footer>
+				<a href="#top" class="smoothScroll"><p>Back to top</p></a>
+			</footer>
+		</div>-->
+	</body>
+</html>
